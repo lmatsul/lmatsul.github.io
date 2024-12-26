@@ -1,11 +1,235 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-</head>
-<body>
-<h1>Hello, world!</h1>
-</body>
+<!DOCTYPE html>
+<html class="has-background-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/machml.min.js"></script>    
+    <script src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
+    <title>S.Matsu</title>
+  </head>
+  <body class="main has-navbar-fixed-top">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <span class="icon mr-1">
+            <i class="fa fa-home"></i>
+          </span>
+          S.Matsu
+        </a>
+        <a id="navbarBurger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="privacy_policy.html">
+            <ml-text
+              en="Privacy policy"
+              ja="プライバシーポリシー"
+            ></ml-text>
+          </a>
+          <a class="navbar-item" href="https://docs.google.com/forms/d/1Uo4gF2h6ZArdNEPww_ej_Z7JFtpyrnU85e-AxBgNfDQ" target="_blank">
+            <ml-text
+              en="Inquiry"
+              ja="お問い合わせ"
+            ></ml-text>
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <ml-text
+                en="Language"
+                ja="言語"
+              ></ml-text>
+            </a>
+            <div class="navbar-dropdown">
+              <ml-block>
+                <p data-lang="en">
+                  <a class="navbar-item">EN</a>
+                  <a class="navbar-item" onclick="changeLanguage('ja');">JA</a>
+                </p>
+                <p data-lang="ja">
+                  <a class="navbar-item" onclick="changeLanguage('en');">EN</a>
+                  <a class="navbar-item">JA</a>
+                </p>
+              </ml-block>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container p-4 mb-6">
+      <div class="content">
+        <h1>
+          <ml-text
+            en="Applications"
+            ja="アプリケーション"
+          ></ml-text>
+        </h1>
+        <div class="box">
+          <div class="columns is-gapless">
+            <div class="colmun mr-4">
+              <ml-block>
+                <div data-lang="en">
+                  <img src="img/rollbooks_en.png" width="80px" style="border-radius:10px;" />
+                </div>
+                <div data-lang="ja">
+                  <img src="img/rollbooks_ja.png" width="80px" style="border-radius:10px;" />
+                </div>
+              </ml-block>
+            </div>
+            <div class="colmun mt-2">
+              <h5 class="mb-2">
+                <ml-text
+                  en="Roll Books"
+                  ja="日程調整くん"
+                ></ml-text>
+              </h5>
+              <div class="mb-2">
+                <ml-text
+                  en="You can schedule an event just by sending the URL of the schedule you created."
+                  ja="作成した日程調整のURLを送るだけで、イベントの日程調整が出来ます"
+                ></ml-text>
+              </div>
+              <div>
+                <ml-block>
+                  <div data-lang="en">
+                    <a href="https://play.google.com/store/apps/details?id=androidappls.site.com.google.sites.rollbooks" target="_blank">
+                      <img src="img/google_play_en.png" width="136px">
+                    </a>
+                  </div>
+                  <div data-lang="ja">
+                    <a href="https://play.google.com/store/apps/details?id=androidappls.site.com.google.sites.rollbooks" target="_blank">
+                      <img src="img/google_play_ja.png" width="136px">
+                    </a>
+                  </div>
+                </ml-block>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="columns is-gapless">
+            <div class="colmun mr-4">
+              <img src="img/smiring.png" width="80px" style="border-radius:10px;" />
+            </div>
+            <div class="colmun mt-2">
+              <h5 class="mb-2">
+                <ml-text
+                  en="Baby stop crying and sleep"
+                  ja="赤ちゃん泣き止み音アプリ - SmiRing -"
+                ></ml-text>
+              </h5>
+              <div class="mb-2">
+                <ml-text
+                  en="This is an app that plays sounds that are said to stop babies from crying."
+                  ja="赤ちゃんが泣き止むと言われている音を再生できるアプリです"
+                ></ml-text>
+              </div>
+              <div>
+                <ml-block>
+                  <div data-lang="en">
+                    <a href="https://apps.apple.com/us/app/smiring-baby-stops-crying/id583900051" target="_blank">
+                      <img src="img/app_store_en.svg" width="110px">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=androidappls.site.com.google.sites.smiring" target="_blank">
+                      <img src="img/google_play_en.png" width="136px">
+                    </a>
+                  </div>
+                  <div data-lang="ja">
+                    <a href="https://apps.apple.com/jp/app/smiring-baby-stops-crying/id583900051" target="_blank">
+                      <img src="img/app_store_ja.svg" width="110px">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=androidappls.site.com.google.sites.smiring" target="_blank">
+                      <img src="img/google_play_ja.png" width="136px">
+                    </a>
+                  </div>
+                </ml-block>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="columns is-gapless">
+            <div class="colmun mr-4">
+              <img src="img/toiletsounds.png" width="80px" style="border-radius:10px;" />
+            </div>
+            <div class="colmun mt-2">
+              <h5 class="mb-2">
+                <ml-text
+                  en="Toilet Sounds"
+                  ja="トイレ音"
+                ></ml-text>
+              </h5>
+              <div class="mb-2">
+                <ml-text
+                  en="This is an app that can play sounds such as the sound of a toilet flushing in order to protect privacy in the toilet."
+                  ja="トイレにおけるプライバシーを守るため、トイレの流水音などを再生することが出来るアプリです"
+                ></ml-text>
+              </div>
+              <div>
+                <ml-block>
+                  <div data-lang="en">
+                    <a href="https://play.google.com/store/apps/details?id=androidappls.site.com.google.sites.toiletsounds" target="_blank">
+                      <img src="img/google_play_en.png" width="136px">
+                    </a>
+                  </div>
+                  <div data-lang="ja">
+                    <a href="https://play.google.com/store/apps/details?id=androidappls.site.com.google.sites.toiletsounds" target="_blank">
+                      <img src="img/google_play_ja.png" width="136px">
+                    </a>
+                  </div>
+                </ml-block>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1>
+          <ml-text
+            en="Web Service"
+            ja="ウェブサービス"
+          ></ml-text>
+        </h1>
+        <div class="box">
+          <div class="columns is-gapless">
+            <div class="colmun mr-4">
+              <ml-block>
+                <div data-lang="en">
+                  <img src="img/rollbooks_en.png" width="80px" style="border-radius:10px;" />
+                </div>
+                <div data-lang="ja">
+                  <img src="img/rollbooks_ja.png" width="80px" style="border-radius:10px;" />
+                </div>
+              </ml-block>
+            </div>
+            <div class="colmun mt-2">
+              <a class="button is-text p-0" href="https://roll-books.com" target="_blank">
+                <h5>
+                  <ml-text
+                    en="Roll Books"
+                    ja="日程調整くん"
+                  ></ml-text>
+                </h5>
+              </a>
+              <div class="mb-2">
+                <ml-text
+                  en="You can schedule an event just by sending the URL of the schedule you created."
+                  ja="作成した日程調整のURLを送るだけで、イベントの日程調整が出来ます"
+                ></ml-text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

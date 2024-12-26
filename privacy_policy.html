@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="has-background-light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/machml.min.js"></script>    
+    <script src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.7.2/js/all.js"></script>
+    <title>S.Matsu</title>
+  </head>
+  <body class="main has-navbar-fixed-top">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <span class="icon mr-1">
+            <i class="fa fa-home"></i>
+          </span>
+          S.Matsu
+        </a>
+        <a id="navbarBurger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="privacy_policy.html">
+            <ml-text
+              en="Privacy policy"
+              ja="プライバシーポリシー"
+            ></ml-text>
+          </a>
+          <a class="navbar-item" href="https://docs.google.com/forms/d/1Uo4gF2h6ZArdNEPww_ej_Z7JFtpyrnU85e-AxBgNfDQ" target="_blank">
+            <ml-text
+              en="Inquiry"
+              ja="お問い合わせ"
+            ></ml-text>
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <ml-text
+                en="Language"
+                ja="言語"
+              ></ml-text>
+            </a>
+            <div class="navbar-dropdown">
+              <ml-block>
+                <p data-lang="en">
+                  <a class="navbar-item">EN</a>
+                  <a class="navbar-item" onclick="changeLanguage('ja');">JA</a>
+                </p>
+                <p data-lang="ja">
+                  <a class="navbar-item" onclick="changeLanguage('en');">EN</a>
+                  <a class="navbar-item">JA</a>
+                </p>
+              </ml-block>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container p-4 mb-6">
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            <a href="/">
+              <ml-text
+                en="Home"
+                ja="ホーム"
+              ></ml-text>
+            </a>
+          </li>
+          <li class="is-active">
+            <a href="#" aria-current="page" class="has-text-black">
+              <ml-text
+                en="Privacy Policy"
+                ja="プライバシーポリシー"
+              ></ml-text>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>
+          <ml-text
+            en="Privacy policy"
+            ja="プライバシーポリシー"
+          ></ml-text>
+        </h1>
+        <div class="box">
+          <ml-block>
+            <ul class="mt-0 ml-5" data-lang="en">
+              <li>We respect the privacy of our users and do not collect any personal information about our apps or web services.</li>
+              <li>Any information you view, search, or share within each app or web service will not be tracked, collected, or transmitted to any outside parties.</li>
+            </ul>
+            <ul class="mt-0 ml-5" data-lang="ja">
+              <li>利用される方のプライバシーを尊重し、各アプリやウェブサービスは個人情報を収集いたしません。</li>
+              <li>各アプリやウェブサービス内で閲覧、検索、共有した情報について、追跡・収集・外部への転送はいたしません。</li>
+            </ul>
+          </ml-block>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
